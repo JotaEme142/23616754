@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATI[UCV]2024-1</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
         html{
             min-height: 100%;
             position: relative;
-        }
-        body{
-            margin: 0;
-            margin-bottom: 40px;
         }
         footer{
             position: absolute;
@@ -22,28 +23,35 @@
             text-align: center;
             background-color: rgb(105, 175, 255);
         }
+        a{
+            text-decoration: none;
+        }
+        a:visited{
+            color: white;
+        }
         .menuElement{
-            display: inline;
-            width: 30%;
-           float: left;
+            float: left;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 33.3%;
             color: white;
             text-align: center;
             font-family: "Segoe UI";
             font-size:  25pt;
-            padding: 14px 16px;
-            text-decoration:  none;
             background-color: rgb(105, 175, 255);
         }
         .menu{
-            position: absolute;
-            top: 0;
+            align-items: center;
+            vertical-align: middle;
+            align-content: center;
+            position: sticky;
             width: 100%;
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
         .dummyList{
-            margin-top: 100px;
             list-style-type: none;
             background-color: white;
         }
@@ -67,12 +75,12 @@
     <header>
         <nav>
             <ul class="menu">
-                <li class="menuElement">ATI<span style="font-size: 50%;">[UCV]</span> 2024-1</li>
-                <li class="menuElement">Hola, José Torres</li>
-                <li class="menuElement"><form>
+                <li class="menuElement"><a href="#">ATI<span style="font-size: 50%;">[UCV]</span> 2024-1</a></li>
+                <li class="menuElement"><a href="#">Hola, José Torres</a></li>
+                <li class="menuElement"><a href="#"><form>
                     <input type="search" placeholder="Buscar"/>
                     <button type="submit">Buscar</button>
-                </form></li>
+                </form></a></li>
             </ul>
         </nav>
     </header>
