@@ -51,6 +51,7 @@ footer{
     background-color: rgb(105, 175, 255);
 }
 .menuText{
+    color: white;
     text-decoration: none;
 }
 .menuText:visited{
