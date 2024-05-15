@@ -1,129 +1,104 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-html {
-  min-height: 100%;
-  position: relative;
+html{
+    min-height: 100%;
+    position: relative;
 }
-
-.profile-container {
-  display: flex;
-  float: left;
-  flex-direction: row;
+.photo{
+    float: left;
+    border-top-left-radius: 50px;
+    height: 350px;            
 }
-.profile-container > div > p > a:link {
-  color: orange;
+.profile-box{
+    float: left;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    width: 800px;
+    height: 350px;
 }
-.profile-container > div > p > a:visited {
-  color: red;
+.description{
+    font-family: Segoe UI;
+    font-style: italic;
 }
-.profile-container > div > p > a:hover {
-  color: red;
+.name{
+    color: blue;
+    font-size: 20pt;
 }
-.profile-container > div > p > a:active {
-  color: red;
+.email:link{
+    color: orange;
 }
-.rounded-photo {
-  border-top-left-radius: 50px;
+.email:visited{
+    color: red;
 }
-.profile-box {
-  padding: 10px;
-  border: 2px solid black;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-  text-align: justify;
+.email:hover{
+    color: red;
 }
-.description {
-  font-family: Segoe UI;
-  font-style: italic;
+.email:active{
+    color: red;
 }
-.name {
-  color: blue;
-  font-size: 2rem;
+footer{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    font-family: "Segoe UI";
+    text-align: center;
+    background-color: rgb(105, 175, 255);
 }
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  font-family: "Segoe UI";
-  text-align: center;
-  background-color: rgb(105, 175, 255);
+.menuText{
+    text-decoration: none;
 }
-.menuText {
-  color: white;
-  text-decoration: none;
+.menuText:visited{
+    color: white;
 }
-.menuText:visited {
-  color: white;
+.menuElement{
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 33.3%;
+    color: white;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size:  25pt;
+    background-color: rgb(105, 175, 255);
 }
-.menuElement {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  color: white;
-  text-align: center;
-  font-family: "Segoe UI";
-  font-size: 2rem;
-  background-color: rgb(105, 175, 255);
+.menuNombre{
+    vertical-align: 50%;
+    font-size: 50%;
 }
-.menuNombre {
-  vertical-align: 50%;
-  font-size: 1rem;
+.menu{
+    position: sticky;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-.menu {
-  display: grid;
-  grid-template-columns: 33% 34% 33%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.dummyList{
+    list-style-type: none;
+    background-color: white;
 }
-.dummyList {
-  display: grid;
-  gap: 1rem;
-  justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  list-style-type: none;
-  background-color: white;
+.dummyProfile{
+    font-family: "Segoe UI";
+    text-align: center;
+    float: left ;
+    margin: 5px 5px 5px 5px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-color: aliceblue;
+    color: rgb(105, 175, 255);
 }
-.dummyProfile {
-  font-family: "Segoe UI";
-  text-align: center;
-  overflow: hidden;
-  width: 200px;
-  height: 200px;
-  background-color: aliceblue;
-  color: rgb(105, 175, 255);
+.dummyProfile:hover{
+    transform: rotate(15deg) scale(1.1);
+    background-color: #99c5dd;
 }
-.dummyProfile:hover {
-  transform: rotate(15deg) scale(1.1);
-  background-color: #99c5dd;
-}
-.dummyPhoto {
-  margin-top: 10px;
-  height: 10rem;
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  /*Mobile*/
-  .photo {
-    content: url(../23616754Pequena.jpg);
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  /*Tablets*/
-  .photo {
-    content: url(../23616754Pequena.jpg);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /*Laptops and small screens*/
-  .photo {
-    content: url(../23616754Grande.jpg);
-  }
-}
-@media screen and (min-width: 1025px) {
-  /*Desktop*/
-  .photo {
-    content: url(../23616754Grande.jpg);
-  }
+.dummyPhoto{
+    margin-top: 10px;
+    height: 150px;
 }
